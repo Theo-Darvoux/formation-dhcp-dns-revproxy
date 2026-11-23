@@ -22,3 +22,43 @@
 .reveal .qr-card h3 { margin-bottom: 0.4em; }
 .reveal .qr svg { width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto; background: #fff; }
 .reveal .qr-url { font-family: var(--r-code-font); font-size: 0.4em; overflow-wrap: anywhere; margin-top: 0.5em; }
+
+.reveal .ok { color: var(--ok); }
+.reveal .ko { color: var(--ko); }
+
+/* Schémas en ligne : A → B → C */
+.reveal .pipeline { display: flex; align-items: center; justify-content: center; gap: 0.5em; font-size: 0.8em; margin: 0.5em 0; }
+.reveal .stage { border: 2px solid #888; border-radius: 8px; padding: 0.4em 0.8em; line-height: 1.3; }
+.reveal .stage.accent { border-color: var(--accent); background: var(--box); }
+
+/* Diagrammes de séquence (DORA, résolution DNS) */
+.reveal .seq { width: 80%; margin: 0.5em auto; font-size: 0.65em; }
+.reveal .seq-head { display: flex; justify-content: space-between; }
+.reveal .seq-head span { border: 2px solid var(--accent); border-radius: 8px; background: var(--box); padding: 0.2em 0.6em; }
+.reveal .msg { position: relative; margin: 0.8em 10% 0; padding-bottom: 0.15em; border-bottom: 3px solid #bbb; text-align: center; }
+.reveal .msg small { display: block; font-size: 0.7em; opacity: 0.7; }
+.reveal .msg::after { content: ''; position: absolute; bottom: -9px; border-top: 7.5px solid transparent; border-bottom: 7.5px solid transparent; }
+.reveal .msg.right::after { right: -2px; border-left: 15px solid #bbb; }
+.reveal .msg.left::after { left: -2px; border-right: 15px solid #bbb; }
+
+/* Découpage d'un nom de domaine */
+.reveal .domain { font-family: var(--r-code-font); font-size: 1.2em; margin: 0.3em 0 0.6em; }
+.reveal .domain .part { border-bottom: 3px solid var(--accent); padding: 0 0.1em; }
+.reveal .domain .root { border-bottom-color: var(--ok); }
+
+/* Schéma réseau (Sans DNS / Avec DNS) */
+.reveal .net svg { width: 100%; height: auto; max-height: 470px; }
+.net text { fill: #eee; font-size: 24px; text-anchor: middle; font-family: sans-serif; }
+.net text.ip { font-family: monospace; font-size: 20px; opacity: 0.8; }
+.net .node rect, .net .node circle { fill: var(--box); stroke: #888; stroke-width: 2; }
+.net .node rect { rx: 8; }
+.net .node.accent rect, .net .node.cloud circle { stroke: var(--accent); }
+.net .link { stroke: #555; stroke-width: 3; }
+.net .hop { stroke-width: 6; }
+.net .hop.q { stroke: var(--accent); }
+.net .hop.r { stroke: var(--ok); }
+.net .hop.ko { stroke: var(--ko); }
+.net .head.q { fill: var(--accent); }
+.net .head.r { fill: var(--ok); }
+.net text.caption { font-size: 26px; }
+.net text.cross { fill: var(--ko); font-size: 60px; }

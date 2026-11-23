@@ -151,12 +151,12 @@ server {
 
 ## Qui est le client ?
 
-<div class="pipeline">
+<div class="pipeline" style="font-size:0.7em">
 <div class="stage">Client<br><code>90.91.82.128</code></div>
 <div class="arrow">→</div>
 <div class="stage accent">nginx<br><code>10.0.0.1</code></div>
 <div class="arrow">→</div>
-<div class="stage">Wiki<br>« Requête de <code>10.0.0.1</code> »</div>
+<div class="stage">Wiki<br><small>voit <code>10.0.0.1</code></small></div>
 </div>
 
 <p class="small fragment">Le wiki pense que toutes les requêtes viennent de nginx. <strong class="ko">Logs inutiles, bans impossibles</strong></p>

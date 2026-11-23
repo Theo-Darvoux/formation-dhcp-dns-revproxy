@@ -1,0 +1,22 @@
+"Blooket
+Import Template",,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3
+(Optional)","Answer 4
+(Optional)","Time Limit (sec)
+(Max: 300 seconds)","Correct Answer(s)
+(Only include Answer #)"
+1,Que signifie DORA ?,"Discover, Offer, Request, Acknowledge","Detect, Open, Reply, Accept","Discover, Order, Route, Assign","Download, Offer, Resolve, Ack",20,1
+2,Sur quels ports UDP fonctionne DHCP ?,53 et 54,67 (serveur) et 68 (client),80 et 443,22 et 23,20,2
+3,Quelle est l'adresse source du DHCP Discover ?,255.255.255.255,192.168.1.1,0.0.0.0,127.0.0.1,20,3
+4,Pourquoi le DHCP Request est-il envoyé en broadcast ?,Le client ne connaît pas l'IP du serveur,Pour prévenir les autres serveurs que leur offre est refusée,C'est plus rapide,Pour chiffrer la requête,20,2
+5,Que contient le DHCP Ack ?,Uniquement l'adresse IP,L'adresse MAC du serveur,"IP, masque, passerelle, DNS et durée du bail",La liste des sites autorisés,20,3
+6,À quoi sert le DNS ?,Attribuer des IP aux machines,Traduire un nom de domaine en adresse IP,Chiffrer le trafic web,Router les paquets,20,2
+7,Quel enregistrement associe un nom à une adresse IPv6 ?,A,MX,AAAA,PTR,20,3
+8,Dans quel ordre le résolveur interroge-t-il les serveurs ?,Autoritaire → TLD → Racine,TLD → Racine → Autoritaire,Racine → Autoritaire → TLD,Racine → TLD → Autoritaire,20,4
+9,À quoi sert un glue record ?,Donner l'IP d'un serveur NS pour éviter une boucle,Coller deux domaines ensemble,Mettre une réponse en cache,Rediriger vers HTTPS,20,1
+10,Quel enregistrement indique le serveur mail d'un domaine ?,CNAME,MX,TXT,NS,20,2
+11,Un reverse proxy parle au nom de…,Des clients,Des serveurs,Du FAI,Du résolveur DNS,20,2
+12,Comment nginx choisit-il vers quel serveur envoyer une requête HTTP ?,Avec l'adresse MAC du client,Avec l'en-tête Host,Au hasard,Avec le port source du client,20,2
+13,"Dans nginx, quelle directive indique où transmettre la requête ?",server_name,listen,proxy_pass,location,20,3
+14,"Sans en-têtes ajoutés, quelle IP le serveur derrière nginx voit-il ?",Celle du client,Celle du résolveur DNS,Celle de nginx,Aucune,20,3
+15,Que veut dire « terminaison TLS » sur le reverse proxy ?,nginx coupe les connexions HTTPS,nginx déchiffre le HTTPS et parle en HTTP au serveur derrière,Le certificat est sur chaque serveur,Le client désactive TLS,20,2

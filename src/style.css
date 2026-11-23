@@ -1,0 +1,24 @@
+/* Styles communs aux slides de la formation */
+
+:root {
+  --accent: #42affa;
+  --ok: #7bd88f;
+  --ko: #ff6b6b;
+  --box: #1e2a38;
+}
+
+.reveal .small { font-size: 0.8em; }
+.reveal .big { font-size: 1.6em; font-weight: bold; }
+.reveal .desc { font-size: 0.7em; margin: 0.3em 0 0.5em; }
+
+/* Colonnes */
+.reveal .cols { display: flex; gap: 1em; align-items: flex-start; }
+.reveal .cols > * { flex: 1; min-width: 0; }
+.reveal .cols pre { width: 100%; }
+
+/* QR codes (slide TP) */
+.reveal .qrs { display: flex; gap: 1em; justify-content: center; align-items: flex-start; }
+.reveal .qr-card { flex: 1; min-width: 0; }
+.reveal .qr-card h3 { margin-bottom: 0.4em; }
+.reveal .qr svg { width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto; background: #fff; }
+.reveal .qr-url { font-family: var(--r-code-font); font-size: 0.4em; overflow-wrap: anywhere; margin-top: 0.5em; }
